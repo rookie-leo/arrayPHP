@@ -56,6 +56,22 @@ echo("<br>");
 echo("<br>");
 echo("<br>");
 
+    //ForEach
+    $aluno = array("Philip", "Lucas", "Caio", "Davi", "Júlio");
+
+    $random_keys=array_rand($aluno,3);
+    echo $aluno[$random_keys[0]]."<br>";
+    echo $aluno[$random_keys[1]]."<br>";
+    echo $aluno[$random_keys[2]]."<br>";
+
+    foreach($aluno as $n=>$n_value) {
+      echo "Aluno (". $n.") ".$n_value."<br>";
+    }
+
+echo("<br>");
+echo("<br>");
+echo("<br>");
+
       //Meu teste
       $numeros = array(1, 2, 3, 4, 5.5);
       $calc;
